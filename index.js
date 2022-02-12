@@ -2,7 +2,7 @@ require('dotenv').config();
 const express = require('express');
 const { createCurrenciesRatesFile } = require('./helpers/currency-operations');
 
-//Obtener tipos de cambio y crear archivo json
+//Obtener tipos de cambio y guardar en archivo json
 createCurrenciesRatesFile();
 
 const app = express();
